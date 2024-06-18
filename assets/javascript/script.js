@@ -19,55 +19,48 @@ const COLORS_GRID = {
 };
 
 /**
- * Funciones del Juego
+ * Variables del HTML
  */
+
+let GRID = document.getElementById("grid");
+let INPUT = document.getElementById('guess-input');
+let CONTENEDOR = document.getElementById('guesses');
+let BUTTON = document.getElementById('guess-button');
+let BUTTON_REINICIO = document.getElementById('guess-button-Reinicio');
+
+/**
+ * Event Listeners y Carga de la Página
+ */
+window.addEventListener('load', () => {
+    aleatorioText();
+    console.info(MENSAJES_USER.MENSAJE_CONEXION);
+});
 
 // Palabra Aleatoria
 function aleatorioText(){
     palabra = diccionario[Math.floor(Math.random()*diccionario.length)];
 }
 
-// Función para limpiar la interfaz de usuario
-function limpiarUI() {
-    const GRID = document.getElementById("grid");
-    const INPUT = document.getElementById('guess-input');
-    const CONTENEDOR = document.getElementById('guesses');
-    const BUTTON = document.getElementById('guess-button');
-    
-    GRID.innerHTML = '';
-    CONTENEDOR.innerHTML = '';
-    INPUT.value = ''; 
-    INPUT.disabled = false;
-    BUTTON.disabled = false;
-}
-
-// Función para comenzar un nuevo juego
-function nuevoJuego() {
-    intentos = 6;
-    limpiarUI();
-    aleatorioText();
-    buttonReinicio.style.display='none';
-}
-
+// Evento para el botón de intento
+BUTTON.addEventListener('click', procesarIntento);
 
 // Función principal para procesar el intento del usuario
 function procesarIntento() {
-    const INPUT = document.getElementById('guess-input').value.toUpperCase().trim();
+    let textoIngresado = INPUT.value.toUpperCase().trim();
     
-    if (INPUT.length === 5) {
-        mostrarIntento(INPUT);
+    if (textoIngresado.length === 5) {
+        mostrarIntento(textoIngresado);
         return;
     } 
     alert(MENSAJES_USER.MENSAJE_ERROR);
-    
 }
 
 // Función para mostrar el intento del usuario y validar
 function mostrarIntento(text) {
-    const GRID = document.getElementById("grid");
-    const ROW = document.createElement('div');
+
+    let ROW = document.createElement('div');
     ROW.className = 'row';
-    
+
     if (text === palabra) {
         terminarJuego(MENSAJES_USER.MENSAJE_ACIERTO);
         return;
@@ -99,29 +92,28 @@ function mostrarIntento(text) {
 
 // Función para terminar el juego
 function terminarJuego(mensaje) {
-    const BUTTON = document.getElementById('guess-button');
-    const INPUT = document.getElementById('guess-input');
-    const contenedor = document.getElementById('guesses');
-    document.getElementById('guess-button-Reinicio').style.display='block';
-    
+    BUTTON_REINICIO.style.display='block';
     INPUT.disabled = true;
     BUTTON.disabled = true;
-
-    contenedor.innerHTML = mensaje;
+    CONTENEDOR.innerHTML = mensaje;
 }
 
-/**
- * Event Listeners y Carga de la Página
- */
-window.addEventListener('load', () => {
-    aleatorioText();
-    console.info(MENSAJES_USER.MENSAJE_CONEXION);
-});
-
-// Evento para el botón de intento
-const button = document.getElementById('guess-button');
-button.addEventListener('click', procesarIntento);
-
 // Evento para el botón de reinicio
-const buttonReinicio = document.getElementById('guess-button-Reinicio');
-buttonReinicio.addEventListener('click', nuevoJuego);
+BUTTON_REINICIO.addEventListener('click', nuevoJuego);
+
+// Función para comenzar un nuevo juego
+function nuevoJuego() {
+    intentos = 6;
+    limpiarUI();
+    aleatorioText();
+    BUTTON_REINICIO.style.display='none';
+}
+
+// Función para limpiar la interfaz de usuario
+function limpiarUI() {
+    GRID.innerHTML = '';
+    CONTENEDOR.innerHTML = '';
+    INPUT.value = ''; 
+    INPUT.disabled = false;
+    BUTTON.disabled = false;
+}
