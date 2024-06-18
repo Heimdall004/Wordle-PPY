@@ -1,0 +1,168 @@
+:root {
+  --color-bg-primary: #0d1117; /* Color de fondo principal */
+  --color-bg-secondary: #161b22; /* Color de fondo secundario */
+  --color-bg-tertiary: #0d1117; /* Color de fondo terciario */
+  --color-border-primary: #30363d; /* Color del borde principal */
+  --color-text-primary: #c9d1d9; /* Color de texto principal */
+  --color-text-secondary: #8b949e; /* Color de texto secundario */
+  --color-text-tertiary: #f0f6fc; /* Color de texto terciario */
+  --color-link-primary: #58a6ff; /* Color de enlace principal */
+  --color-link-secondary: #1f6feb; /* Color de enlace secundario */
+  --color-link-hover: #c9d1d9; /* Color de enlace al pasar el mouse */
+  --color-accent-primary: #1f6feb; /* Color de acento principal */
+  --color-accent-secondary: #6e40c9; /* Color de acento secundario */
+  --color-error: #d73a49; /* Color de error */
+  --color-success: #2ea44f; /* Color de éxito */
+}
+/*General*/
+body {
+  background-color: var(--color-bg-primary);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*Inputs*/
+#guess-input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+
+  border: none;
+  border: 5px solid var(--color-border-primary);
+  border-radius: 10px;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+}
+
+/*Botones*/
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--color-success);
+  color: var(--color-text-primary);
+  border: none;
+  border-radius: 25px;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.guess-button-reinicio{
+  display: none;
+}
+
+/*Rendija*/
+
+.letter {
+  border: 1px solid var(--color-border-primary);
+  padding: 3px;
+  margin: 3px;
+  min-width: 20px;
+  text-align: center;
+  background: var(--color-bg-secondary);
+  display: inline-block;
+  color: var(--color-text-tertiary);
+}
+
+.row {
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.input-area {
+  margin: 30px;
+}
+
+
+
+
+/** 
+ * Extras
+*/
+
+h2,h3{
+  color: var(--color-text-secondary);
+  text-align: center;
+  margin-top: 50px;
+}
+
+p{
+  justify-content: center;
+  color: var( --color-text-tertiary);  
+  margin: 10px;
+}
+
+section{
+  padding: 15px;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-secondary);
+  border-radius: 25px;
+}
+
+a {
+  color: var(--color-link-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+.error-message {
+  color: var(--color-error);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.success-message {
+  color: var(--color-success);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para listas */
+ul {
+  background-color: var(--color-bg-secondary);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 600px;
+  list-style-position: inside;
+  border: 1px solid var(--color-border-primary);
+}
+
+ul li{
+  margin: 10px 0;
+  padding: 10px;
+  background-color: var(--color-bg-tertiary);
+  border-radius: 5px;
+  color: var(--color-text-primary);
+}
+
+ul li:hover{
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

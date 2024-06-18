@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Conexión a CSS -->
+    <link rel="stylesheet" href="./assets/style/style.css" /> 
+
+    <!-- Conexión con JS -->
+    <script type="module" src="./assets/javascript/script.js" defer></script>
+    <title>Wordle PPY</title>
+  </head>
+  <body>
+    <main>
+      <h1>Wordle PPY</h1>
+      <input type="text" id="guess-input" />
+      <button id="guess-button" >Intentar</button>
+      
+      <div id="grid"></div>
+      
+      <p id="guesses"></p>
+
+      <button id="guess-button-Reinicio" class="guess-button-reinicio">Jugar de Nuevo</button>
+
+
+      <section>
+        <h2>Juego Wordle: Adivina la Palabra Española Oculta</h2>
+        <p>
+          Las reglas son muy simples: debes adivinar la palabra oculta en español en 6 intentos. Para comenzar, simplemente escriba cualquier palabra en la primera línea. Si la letra se adivina correctamente y está en el lugar correcto, se marcará en verde, si la letra está en la palabra, pero en el lugar equivocado, en amarillo, y si la letra no está en la palabra, permanecerá gris. ¿Puedes adivinar la palabra española oculta en 6 intentos?
+        </p>
+      </section>
+
+      <h2>Preguntas Frecuentes</h2>
+
+      <section>
+        <h3>¿Cuáles son las reglas del juego Wordle?</h3>
+        <p>
+          El objetivo principal del juego es adivinar la palabra oculta en 6 intentos. En cada línea, debe ingresar cualquier palabra de 4 a 11 letras para averiguar qué letras hay en la palabra objetivo. Según la palabra que haya ingresado, las letras se resaltarán en tres colores. <br><br>
+          <strong>Marca de color:</strong>
+        </p>
+
+        <ul>
+          <li>La letra no está en la palabra de destino en absoluto.</li>
+          <li>La letra está en la palabra pero en el lugar equivocado.</li>
+          <li>La letra está en la palabra y en el lugar correcto.</li>
+        </ul>
+        <p>Para ganar, debes adivinar por completo la palabra oculta (todas las letras son verdes).</p>
+      </section>
+
+
+    </main>
+  </body>
+</html>
