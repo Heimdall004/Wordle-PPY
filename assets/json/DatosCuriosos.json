@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "category": "HTML",
+    "fact": "HTML fue creado por Tim Berners-Lee en 1991."
+  },
+  {
+    "id": 2,
+    "category": "HTML",
+    "fact": "HTML es un lenguaje de marcado utilizado para estructurar el contenido web."
+  },
+  {
+    "id": 3,
+    "category": "HTML",
+    "fact": "HTML5 fue lanzado en octubre de 2014."
+  },
+  {
+    "id": 4,
+    "category": "HTML",
+    "fact": "HTML es la abreviatura de HyperText Markup Language."
+  },
+  {
+    "id": 5,
+    "category": "HTML",
+    "fact": "HTML utiliza etiquetas como <h1> y <p> para definir el contenido."
+  },
+  {
+    "id": 6,
+    "category": "HTML",
+    "fact": "El DOCTYPE declara la versión de HTML que se está utilizando."
+  },
+  {
+    "id": 7,
+    "category": "HTML",
+    "fact": "El atributo 'alt' en las etiquetas <img> proporciona texto alternativo para las imágenes."
+  },
+  {
+    "id": 8,
+    "category": "HTML",
+    "fact": "HTML5 introdujo nuevas etiquetas semánticas como <header>, <footer> y <article>."
+  },
+  {
+    "id": 9,
+    "category": "HTML",
+    "fact": "El atributo 'href' en las etiquetas <a> define el destino de un enlace."
+  },
+  {
+    "id": 10,
+    "category": "HTML",
+    "fact": "El atributo 'target=\"_blank\"' en un enlace abre el enlace en una nueva pestaña."
+  },
+  {
+    "id": 11,
+    "category": "CSS",
+    "fact": "CSS fue desarrollado por Håkon Wium Lie en 1996."
+  },
+  {
+    "id": 12,
+    "category": "CSS",
+    "fact": "CSS es la abreviatura de Cascading Style Sheets."
+  },
+  {
+    "id": 13,
+    "category": "CSS",
+    "fact": "CSS se utiliza para describir la presentación de un documento HTML."
+  },
+  {
+    "id": 14,
+    "category": "CSS",
+    "fact": "CSS puede cambiar la apariencia de un documento HTML sin alterar su estructura."
+  },
+  {
+    "id": 15,
+    "category": "CSS",
+    "fact": "CSS3 es la última versión principal de CSS."
+  },
+  {
+    "id": 16,
+    "category": "CSS",
+    "fact": "CSS permite aplicar estilos a múltiples páginas web con un solo archivo de estilo."
+  },
+  {
+    "id": 17,
+    "category": "CSS",
+    "fact": "Las hojas de estilo en cascada (CSS) pueden tener múltiples niveles de prioridad: inline, internal y external."
+  },
+  {
+    "id": 18,
+    "category": "CSS",
+    "fact": "El modelo de caja en CSS define el diseño de elementos en términos de márgenes, bordes, relleno y contenido."
+  },
+  {
+    "id": 19,
+    "category": "CSS",
+    "fact": "El atributo 'display' en CSS puede cambiar cómo se comporta un elemento, como 'block', 'inline' o 'none'."
+  },
+  {
+    "id": 20,
+    "category": "CSS",
+    "fact": "Las animaciones en CSS se pueden crear utilizando las propiedades 'animation' y 'transition'."
+  },
+  {
+    "id": 21,
+    "category": "JavaScript",
+    "fact": "JavaScript fue creado por Brendan Eich en 1995."
+  },
+  {
+    "id": 22,
+    "category": "JavaScript",
+    "fact": "JavaScript es un lenguaje de programación de alto nivel, dinámico y débilmente tipado."
+  },
+  {
+    "id": 23,
+    "category": "JavaScript",
+    "fact": "JavaScript puede ejecutarse tanto en el cliente como en el servidor."
+  },
+  {
+    "id": 24,
+    "category": "JavaScript",
+    "fact": "JavaScript no está relacionado con Java; los nombres son coincidencia."
+  },
+  {
+    "id": 25,
+    "category": "JavaScript",
+    "fact": "JavaScript es uno de los tres lenguajes principales de la web junto con HTML y CSS."
+  },
+  {
+    "id": 26,
+    "category": "JavaScript",
+    "fact": "Node.js permite ejecutar JavaScript en el servidor."
+  },
+  {
+    "id": 27,
+    "category": "JavaScript",
+    "fact": "ECMAScript es el estándar en el que se basa JavaScript."
+  },
+  {
+    "id": 28,
+    "category": "JavaScript",
+    "fact": "Las funciones en JavaScript son ciudadanos de primera clase, lo que significa que se pueden asignar a variables y pasar como argumentos."
+  },
+  {
+    "id": 29,
+    "category": "JavaScript",
+    "fact": "JavaScript utiliza el modelo de concurrencia basado en el bucle de eventos (event loop)."
+  },
+  {
+    "id": 30,
+    "category": "JavaScript",
+    "fact": "JSON (JavaScript Object Notation) es un formato de datos ligero derivado de JavaScript."
+  },
+  {
+    "id": 31,
+    "category": "HTML",
+    "fact": "El atributo 'lang' en la etiqueta <html> define el idioma del documento."
+  },
+  {
+    "id": 32,
+    "category": "HTML",
+    "fact": "HTML5 permite incrustar contenido multimedia directamente con las etiquetas <audio> y <video>."
+  },
+  {
+    "id": 33,
+    "category": "HTML",
+    "fact": "El atributo 'src' en las etiquetas <img> y <script> especifica la fuente del archivo a cargar."
+  },
+  {
+    "id": 34,
+    "category": "HTML",
+    "fact": "HTML5 introduce la API de arrastrar y soltar (drag and drop)."
+  },
+  {
+    "id": 35,
+    "category": "HTML",
+    "fact": "La etiqueta <canvas> de HTML5 se utiliza para dibujar gráficos mediante scripts como JavaScript."
+  },
+  {
+    "id": 36,
+    "category": "HTML",
+    "fact": "La etiqueta <link> se usa para enlazar archivos externos como hojas de estilo CSS."
+  },
+  {
+    "id": 37,
+    "category": "HTML",
+    "fact": "El atributo 'title' en un elemento HTML proporciona información adicional mostrada como un tooltip."
+  },
+  {
+    "id": 38,
+    "category": "HTML",
+    "fact": "El atributo 'alt' en las etiquetas <img> es importante para la accesibilidad y el SEO."
+  },
+  {
+    "id": 39,
+    "category": "HTML",
+    "fact": "HTML5 introduce el almacenamiento web (localStorage y sessionStorage) para almacenar datos en el navegador."
+  },
+  {
+    "id": 40,
+    "category": "HTML",
+    "fact": "El elemento <meta> se utiliza para definir metadatos sobre una página web."
+  },
+  {
+    "id": 41,
+    "category": "CSS",
+    "fact": "El atributo 'color' en CSS define el color del texto."
+  },
+  {
+    "id": 42,
+    "category": "CSS",
+    "fact": "El atributo 'background-color' en CSS define el color de fondo de un elemento."
+  },
+  {
+    "id": 43,
+    "category": "CSS",
+    "fact": "El atributo 'font-family' en CSS define la fuente del texto."
+  },
+  {
+    "id": 44,
+    "category": "CSS",
+    "fact": "El atributo 'margin' en CSS define el espacio exterior alrededor de un elemento."
+  },
+  {
+    "id": 45,
+    "category": "CSS",
+    "fact": "El atributo 'padding' en CSS define el espacio interior dentro de un elemento."
+  },
+  {
+    "id": 46,
+    "category": "CSS",
+    "fact": "El atributo 'border' en CSS define el borde alrededor de un elemento."
+  },
+  {
+    "id": 47,
+    "category": "CSS",
+    "fact": "El atributo 'float' en CSS permite colocar elementos uno al lado del otro."
+  },
+  {
+    "id": 48,
+    "category": "CSS",
+    "fact": "Flexbox es un modelo de diseño en CSS que distribuye espacio dentro de un contenedor y permite un diseño adaptable."
+  },
+  {
+    "id": 49,
+    "category": "CSS",
+    "fact": "CSS Grid Layout es un sistema de diseño bidimensional en CSS que permite el diseño de complejas interfaces web."
+  },
+  {
+    "id": 50,
+    "category": "CSS",
+    "fact": "El atributo 'z-index' en CSS controla el orden de apilamiento de elementos superpuestos."
+  },
+  {
+    "id": 51,
+    "category": "JavaScript",
+    "fact": "JavaScript puede cambiar dinámicamente el contenido HTML de una página web."
+  },
+  {
+    "id": 52,
+    "category": "JavaScript",
+    "fact": "JavaScript puede modificar los estilos CSS de los elementos HTML en tiempo real."
+  },
+  {
+    "id": 53,
+    "category": "JavaScript",
+    "fact": "JavaScript puede responder a eventos como clics de ratón, envíos de formularios y presiones de teclas."
+  },
+  {
+    "id": 54,
+    "category": "JavaScript",
+    "fact": "Las variables en JavaScript se pueden declarar con 'var', 'let' o 'const'."
+  },
+  {
+    "id": 55,
+    "category": "JavaScript",
+    "fact": "JavaScript es un lenguaje de programación orientado a objetos basado en prototipos."
+  },
+  {
+    "id": 56,
+    "category": "JavaScript",
+    "fact": "JavaScript puede realizar solicitudes HTTP asincrónicas utilizando el objeto XMLHttpRequest o la API Fetch."
+  },
+  {
+    "id": 57,
+    "category": "JavaScript",
+    "fact": "El operador '===' en JavaScript comprueba tanto el valor como el tipo de los operandos."
+  },
+  {
+    "id": 58,
+    "category": "JavaScript",
+    "fact": "JavaScript utiliza funciones de primera clase, lo que significa que las funciones pueden ser tratadas como cualquier otra variable."
+  },
+  {
+    "id": 59,
+    "category": "JavaScript",
+    "fact": "El DOM (Document Object Model) permite a JavaScript interactuar con los elementos HTML de una página web."
+  },
+  {
+    "id": 60,
+    "category": "JavaScript",
+    "fact": "El evento 'DOMContentLoaded' se dispara cuando el documento HTML ha sido completamente cargado y parseado."
+  },
+  {
+    "id": 61,
+    "category": "HTML",
+    "fact": "La etiqueta <base> especifica una URL base para todas las URLs relativas en un documento HTML."
+  },
+  {
+    "id": 62,
+    "category": "HTML",
+    "fact": "La etiqueta <form> se utiliza para crear formularios interactivos para la entrada del usuario."
+  },
+  {
+    "id": 63,
+    "category": "HTML",
+    "fact": "El atributo 'action' en una etiqueta <form> define a dónde se envían los datos del formulario."
+  },
+  {
+    "id": 64,
+    "category": "HTML",
+    "fact": "La etiqueta <input> se utiliza para crear controles interactivos en formularios."
+  },
+  {
+    "id": 65,
+    "category": "HTML",
+    "fact": "El atributo 'type' en una etiqueta <input> define el tipo de control de entrada."
+  },
+  {
+    "id": 66,
+    "category": "HTML",
+    "fact": "HTML5 introduce nuevos tipos de entrada como 'date', 'email' y 'range'."
+  },
+  {
+    "id": 67,
+    "category": "HTML",
+    "fact": "La etiqueta <label> se usa para definir una etiqueta para un elemento <input>."
+  },
+  {
+    "id": 68,
+    "category": "HTML",
+    "fact": "El atributo 'for' en una etiqueta <label> vincula la etiqueta a un elemento <input> específico."
+  },
+  {
+    "id": 69,
+    "category": "HTML",
+    "fact": "La etiqueta <select> se utiliza para crear un menú desplegable."
+  },
+  {
+    "id": 70,
+    "category": "HTML",
+    "fact": "La etiqueta <option> se usa dentro de <select> para definir las opciones del menú desplegable."
+  },
+  {
+    "id": 71,
+    "category": "CSS",
+    "fact": "CSS puede cargar fuentes web externas usando la regla @font-face."
+  },
+  {
+    "id": 72,
+    "category": "CSS",
+    "fact": "CSS puede aplicar estilos específicos según el tamaño de la pantalla usando media queries."
+  },
+  {
+    "id": 73,
+    "category": "CSS",
+    "fact": "El atributo 'opacity' en CSS define la transparencia de un elemento."
+  },
+  {
+    "id": 74,
+    "category": "CSS",
+    "fact": "El atributo 'position' en CSS define cómo se coloca un elemento en la página."
+  },
+  {
+    "id": 75,
+    "category": "CSS",
+    "fact": "Las pseudoclases en CSS como ':hover' y ':focus' aplican estilos cuando un elemento está en un estado específico."
+  },
+  {
+    "id": 76,
+    "category": "CSS",
+    "fact": "Las pseudoelementos en CSS como '::before' y '::after' permiten insertar contenido antes o después de un elemento."
+  },
+  {
+    "id": 77,
+    "category": "CSS",
+    "fact": "El atributo 'text-shadow' en CSS añade sombra al texto."
+  },
+  {
+    "id": 78,
+    "category": "CSS",
+    "fact": "El atributo 'box-shadow' en CSS añade sombra a los elementos."
+  },
+  {
+    "id": 79,
+    "category": "CSS",
+    "fact": "El atributo 'transform' en CSS permite aplicar transformaciones como rotación, escala y traslación a los elementos."
+  },
+  {
+    "id": 80,
+    "category": "CSS",
+    "fact": "El atributo 'transition' en CSS define la transición suave de un estado a otro."
+  },
+  {
+    "id": 81,
+    "category": "JavaScript",
+    "fact": "JavaScript puede crear elementos HTML dinámicamente usando document.createElement."
+  },
+  {
+    "id": 82,
+    "category": "JavaScript",
+    "fact": "JavaScript puede manipular el contenido de una página usando innerHTML y textContent."
+  },
+  {
+    "id": 83,
+    "category": "JavaScript",
+    "fact": "JavaScript puede almacenar datos en el navegador usando cookies, localStorage y sessionStorage."
+  },
+  {
+    "id": 84,
+    "category": "JavaScript",
+    "fact": "JavaScript puede manejar errores usando try, catch y finally."
+  },
+  {
+    "id": 85,
+    "category": "JavaScript",
+    "fact": "Las promesas en JavaScript representan la eventual finalización (o falla) de una operación asincrónica y su valor resultante."
+  },
+  {
+    "id": 86,
+    "category": "JavaScript",
+    "fact": "JavaScript tiene un 'strict mode' que mejora la detección de errores y el rendimiento."
+  },
+  {
+    "id": 87,
+    "category": "JavaScript",
+    "fact": "Las funciones flecha (arrow functions) introducidas en ES6 tienen una sintaxis más corta y no tienen su propio 'this'."
+  },
+  {
+    "id": 88,
+    "category": "JavaScript",
+    "fact": "JavaScript puede trabajar con APIs RESTful para realizar operaciones CRUD en datos remotos."
+  },
+  {
+    "id": 89,
+    "category": "JavaScript",
+    "fact": "JavaScript puede realizar operaciones matemáticas avanzadas usando el objeto Math."
+  },
+  {
+    "id": 90,
+    "category": "JavaScript",
+    "fact": "El operador spread (...) en JavaScript permite expandir un iterable en lugares donde se esperan cero o más argumentos (para llamadas de función) o elementos (para literales de array)."
+  },
+  {
+    "id": 91,
+    "category": "HTML",
+    "fact": "El atributo 'download' en una etiqueta <a> permite la descarga de archivos en lugar de abrirlos."
+  },
+  {
+    "id": 92,
+    "category": "HTML",
+    "fact": "El atributo 'defer' en una etiqueta <script> hace que el script se ejecute después de que el documento HTML se haya parseado."
+  },
+  {
+    "id": 93,
+    "category": "HTML",
+    "fact": "HTML5 introduce la etiqueta <datalist> para proporcionar una lista de opciones predeterminadas para otros controles como <input>."
+  },
+  {
+    "id": 94,
+    "category": "HTML",
+    "fact": "La etiqueta <progress> de HTML5 muestra el progreso de una tarea."
+  },
+  {
+    "id": 95,
+    "category": "HTML",
+    "fact": "La etiqueta <output> de HTML5 representa el resultado de un cálculo."
+  },
+  {
+    "id": 96,
+    "category": "HTML",
+    "fact": "El atributo 'spellcheck' en HTML indica si el navegador debe revisar la ortografía del texto del elemento."
+  },
+  {
+    "id": 97,
+    "category": "HTML",
+    "fact": "HTML5 introduce nuevos elementos de control de formularios como <keygen> para generar pares de claves."
+  },
+  {
+    "id": 98,
+    "category": "HTML",
+    "fact": "El atributo 'novalidate' en una etiqueta <form> desactiva la validación de formulario HTML5."
+  },
+  {
+    "id": 99,
+    "category": "HTML",
+    "fact": "La etiqueta <fieldset> agrupa elementos de un formulario."
+  },
+  {
+    "id": 100,
+    "category": "HTML",
+    "fact": "La etiqueta <legend> proporciona un título a los grupos de elementos de formulario creados con <fieldset>."
+  }
+]

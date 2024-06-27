@@ -8,6 +8,7 @@ let palabra = "";
 const MENSAJES_USER = {
   MENSAJE_ERROR: "ERROR: El texto no es valido.",
   MENSAJE_CONEXION: "Conexión exitosa",
+  MENSAJE_ERROR_API: "Conexion fallida con el servidor",
   MENSAJE_ACIERTO: "<h1>GANASTE!😀</h1>",
   MENSAJE_PERDISTE: "<h1>PERDISTE!😖</h1>",
 };
@@ -17,6 +18,11 @@ const COLORS_GRID = {
   YELLOW: "#d29922",
   GREY: "#6e7681",
 };
+
+const URL_DATA ={
+  URL_API : 'https://random-word.ryanrk.com/api/en/word/random/?length=5',
+  URL_DATOS: './assets/json/DatosCuriosos.json'
+}
 
 /**
  * Variables del HTML
@@ -28,30 +34,43 @@ let CONTENEDOR = document.getElementById("guesses");
 let BUTTON = document.getElementById("guess-button");
 let BUTTON_REINICIO = document.getElementById("guess-button-Reinicio");
 
+let VENTANA_MODAL = document.getElementById('ventana-modal');
+let SPAN_SABIAS = document.getElementById('sabias-que');
+
+VENTANA_MODAL.addEventListener('click',()=> VENTANA_MODAL.style.display = 'none'); 
+
 /**
  * Event Listeners y Carga de la Página
  */
 window.addEventListener("load", () => {
   aleatorioText();
+  sabiasQue();
   console.info(MENSAJES_USER.MENSAJE_CONEXION);
 });
 
 // Palabra Aleatoria  // Conectar a una API
 function aleatorioText() {
-  fetch("https://random-word-api.herokuapp.com/word?length=5&lang=es")
+  fetch(URL_DATA.URL_API)
     .then((respuesta) => respuesta.json())
     .then((respuesta) => {
-      let palabra = respuesta[0].toUpperCase();
-      console.log(respuesta[0].toUpperCase());
+      palabra = respuesta[0].toUpperCase();
+      console.log(palabra);
     })
     .catch((error) => {
-      console.error("Error:", error);
+      console.error(MENSAJES_USER.MENSAJE_ERROR_API);
       palabra = diccionario[Math.floor(Math.random() * diccionario.length)];
+      console.log(palabra);
     });
 }
 
 // Evento para el botón de intento
 BUTTON.addEventListener("click", procesarIntento);
+INPUT.addEventListener('keydown',function(event){
+  if(event.key === 'Enter'){
+    procesarIntento();
+  }
+});
+
 
 // Función principal para procesar el intento del usuario
 function procesarIntento() {
@@ -113,7 +132,18 @@ function nuevoJuego() {
   intentos = 6;
   limpiarUI();
   aleatorioText();
+  sabiasQue();
   BUTTON_REINICIO.style.display = "none";
+}
+
+// Header sabias que? 
+function sabiasQue(){
+  fetch(URL_DATA.URL_DATOS)
+  .then(datosREspuesta => datosREspuesta.json())
+  .then(datos =>{
+    SPAN_SABIAS.innerText = datos[Math.floor(Math.random()*datos.length)].fact;
+  })
+  .catch(error => console.error(error));
 }
 
 // Función para limpiar la interfaz de usuario
