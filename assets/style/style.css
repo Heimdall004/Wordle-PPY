@@ -14,54 +14,72 @@
   --color-error: #d73a49; /* Color de error */
   --color-success: #2ea44f; /* Color de éxito */
 }
+
 /*General*/
-body {
-  background-color: var(--color-bg-primary);
-  font-family: Arial, sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--color-bg-primary);
+  margin: 0;
+  padding: 20px;
+}
+
+main{
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--color-bg-secondary);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+h1{
   color: var(--color-text-primary);
   text-align: center;
-  margin-top: 50px;
 }
 
-/*Inputs*/
-#guess-input {
-  display: block;
-  margin: 0 auto 20px;
+input{
+  width: 100%;
   padding: 10px;
+  margin-bottom: 10px;
   font-size: 18px;
-  width: 250px;
-
-  border: none;
-  border: 5px solid var(--color-border-primary);
-  border-radius: 10px;
-  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: 6px;
+  background-color: var(--color-bg-secondary) ;
   color: var(--color-text-secondary);
+  text-align: center;
 }
 
-/*Botones*/
 button {
   display: block;
-  margin: 0 auto;
+  width: 100%;
   padding: 10px 20px;
   font-size: 18px;
   background-color: var(--color-success);
   color: var(--color-text-primary);
   border: none;
   border-radius: 25px;
-  cursor: auto;
-}
-button:hover{
   cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: var(--color-accent-primary);
 }
 
 .guess-button-reinicio{
   display: none;
 }
 
-/*Rendija*/
+#grid {
+  margin-top: 20px;
+}
 
 .letter {
   border: 1px solid var(--color-border-primary);
@@ -69,16 +87,16 @@ button:hover{
   margin: 3px;
   min-width: 20px;
   text-align: center;
-  background: var(--color-bg-secondary);
+  background: var(--color-bg-tertiary);
   display: inline-block;
   color: var(--color-text-tertiary);
 }
 
 .row {
   margin: 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
 }
 
 .input-area {
