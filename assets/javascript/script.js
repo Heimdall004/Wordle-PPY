@@ -34,10 +34,17 @@ let CONTENEDOR = document.getElementById("guesses");
 let BUTTON = document.getElementById("guess-button");
 let BUTTON_REINICIO = document.getElementById("guess-button-Reinicio");
 
+let CERRAR_MODAL = document.getElementById('cerrar-modal');
 let VENTANA_MODAL = document.getElementById('ventana-modal');
 let SPAN_SABIAS = document.getElementById('sabias-que');
 
-VENTANA_MODAL.addEventListener('click',()=> VENTANA_MODAL.style.display = 'none'); 
+
+CERRAR_MODAL.addEventListener('click',()=> VENTANA_MODAL.style.display = 'none');
+CERRAR_MODAL.addEventListener('keydown',(event)=>{
+  if(event.key === 'Enter'){
+    VENTANA_MODAL.style.display = 'none'
+  }
+});
 
 /**
  * Event Listeners y Carga de la Página

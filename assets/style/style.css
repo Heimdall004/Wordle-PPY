@@ -6,14 +6,10 @@
   --color-text-primary: #c9d1d9; /* Color de texto principal */
   --color-text-secondary: #8b949e; /* Color de texto secundario */
   --color-text-tertiary: #f0f6fc; /* Color de texto terciario */
-  --color-link-primary: #58a6ff; /* Color de enlace principal */
-  --color-link-secondary: #1f6feb; /* Color de enlace secundario */
-  --color-link-hover: #c9d1d9; /* Color de enlace al pasar el mouse */
-  --color-accent-primary: #1f6feb; /* Color de acento principal */
-  --color-accent-secondary: #6e40c9; /* Color de acento secundario */
-  --color-error: #d73a49; /* Color de error */
   --color-success: #2ea44f; /* Color de éxito */
+  --color-accent-primary: #1f6feb; /* Color de acento principal */
 }
+
 
 /*General*/
 *{
@@ -145,10 +141,12 @@ p{
   background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
   align-items: center;
   justify-content: center;
+  overflow: auto;
 }
 
 .modal-contenido{
   display: flex;
+  align-items: center;
   background-color: var(--color-bg-tertiary);
   border: 1px solid var(--color-border-primary);
   border-radius: 25px;
@@ -160,7 +158,7 @@ p{
 }
 
 .modal-contenido img{
-  width: 50%;
+  width: auto;
   height: 100%;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -168,11 +166,14 @@ p{
   object-fit: cover; /*Ver mas iformacion*/
   filter: contrast(120%);/*Ver mas iformacion*/
 }
-.modal-contenido div{
+
+.mensaje{
   width: 50%;
+  height: 100%;
   padding: 20px 10px;
-  text-align: center; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
+  text-align: center;
+  flex: 1; /* Esta propiedad permite que el contenido ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
