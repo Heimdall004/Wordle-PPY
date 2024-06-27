@@ -168,7 +168,7 @@ p{
   object-fit: cover; /*Ver mas iformacion*/
   filter: contrast(120%);/*Ver mas iformacion*/
 }
-.modal-contenido > div{
+.modal-contenido div{
   width: 50%;
   padding: 20px 10px;
   text-align: center; 
