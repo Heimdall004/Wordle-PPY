@@ -1,106 +1,125 @@
 :root {
-  --color-bg-primary: #0d1117; /* Color de fondo principal */
-  --color-bg-secondary: #161b22; /* Color de fondo secundario */
-  --color-bg-tertiary: #0d1117; /* Color de fondo terciario */
-  --color-border-primary: #30363d; /* Color del borde principal */
-  --color-text-primary: #c9d1d9; /* Color de texto principal */
-  --color-text-secondary: #8b949e; /* Color de texto secundario */
-  --color-text-tertiary: #f0f6fc; /* Color de texto terciario */
-  --color-success: #2ea44f; /* Color de éxito */
-  --color-accent-primary: #1f6feb; /* Color de acento principal */
+  /* Background colors */
+  --color-canvas-default: #0d1117;
+  --color-canvas-overlay: #161b22;
+  --color-canvas-inset: #010409;
+  --color-primary: #2ea043;
+  --color-primary-hover: #2c974b;
+
+  /* Text colors */
+  --color-text-primary: #c9d1d9;
+  --color-text-secondary: #8b949e;
+  --color-text-tertiary: #6e7681;
+
+  /* Border colors */
+  --color-border-primary: #30363d;
+  --color-border-secondary: #21262d;
+
+  /* Button colors */
+  --color-btn-primary-bg: #238636;
+  --color-btn-primary-border: #2ea043;
+  --color-btn-primary-hover-bg: #2c974b;
+  --color-btn-secondary-bg: #161b22;
+  --color-btn-secondary-border: #30363d;
+  --color-btn-secondary-hover-bg: #21262d;
+
+  /* State colors */
+  --color-state-success-bg: #238636;
+  --color-state-error-bg: #da3633;
+  --color-state-warning-bg: #d29922;
 }
+/*Camabios Generales*/
 
-
-/*General*/
-*{
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-/*Configuraciones por etiquetas*/
-body{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: var(--color-bg-primary);
-  margin: 0;
+
+/*Elementos editados por etiqueta*/
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--color-canvas-default);
   padding: 20px;
 }
 
-main{
-  max-width: 600px;
-  height: auto;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--color-bg-secondary);
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+header {
+  padding: 10px 0;
 }
 
-header{
-  background-color: var(--color-bg-secondary);
-  border:  1px solid var(--color-border-primary);
-  border-radius: 8px;
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 20px;
-
+main {
   display: flex;
-  justify-content:space-between;
 }
 
-h1{
+h1 {
   color: var(--color-text-primary);
-  font-size: 30px;
+  margin: 20px 0;
   text-align: center;
+  justify-content: center;
 }
 
-h2{
+h2,
+h3,
+h4 {
+  margin-top: 20px;
   color: var(--color-text-secondary);
-  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+}
+p {
+  justify-content: center;
+  text-align: justify;
+  color: var(--color-text-tertiary);
+}
+li {
+  font-size: 18px;
 }
 
+/***************************    Header  **************************************/
+.nav-header {
+  display:flex;
+  justify-content: center;
+}
 
-input{
-  width: 100%;
+.ul-header {
+  list-style: none;
+  display: flex;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.menu-btn:hover {
+  color: var(--color-text-primary);
+}
+/****************************   Main    ************************************/
+
+.mainWordleNormal{
+    width: 80%;
+    height: 80vh;
+}
+.guess-input {
+  width: 50%;
   padding: 10px;
   margin-bottom: 10px;
   font-size: 18px;
   border: 1px solid var(--color-border-primary);
   border-radius: 6px;
-  background-color: var(--color-bg-secondary) ;
+  background-color: var(--color-canvas-overlay);
   color: var(--color-text-secondary);
   text-align: center;
 }
-
-button {
-  display: block;
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: var(--color-success);
-  color: var(--color-text-primary);
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  text-align: center;
-}
-
-button:hover {
-  background-color: var(--color-accent-primary);
-}
-
-p{
-  color: var(--color-text-secondary);
-}
-
-/*Configuracion por class*/
-
-.guess-button-reinicio{
-  display: none;
-}
-
-#sabias-que{
-  color: var(--color-accent-primary);
-  font-style: normal;
+.guess-input:focus {
+  outline: none;
 }
 
 #grid {
@@ -113,9 +132,9 @@ p{
   margin: 3px;
   min-width: 20px;
   text-align: center;
-  background: var(--color-bg-tertiary);
+  background-color: var(--color-canvas-default);
   display: inline-block;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-primary);
 }
 
 .row {
@@ -125,54 +144,127 @@ p{
   justify-content: center;
 }
 
-.input-area {
-  margin: 30px;
+.guess-button-Reinicio{
+    display: none;
 }
 
+/********************************************************************/
+/*Configuraciones Botones*/
 
-/**Ventana Modal*/
-.ventana-modal{
-  height: 100%;
-  width: 100%;
-  position: fixed;/* Posición fija para cubrir toda la pantalla */
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
+button.primaryButton {
+  color: var(--color-text-primary);
+  background-color: var(--color-btn-primary-bg);
+  border: 1px solid var(--color-border-primary);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 20px;
 }
 
-.modal-contenido{
+button.primaryButton:hover {
+  background-color: var(--color-btn-primary-hover-bg);
+  cursor: pointer;
+}
+
+/*Texto span*/
+.success {
+  color: var(--color-state-success-bg);
+}
+
+.error {
+  color: var(--color-state-error-bg);
+}
+
+.warning {
+  color: var(--color-state-warning-bg);
+}
+
+/* Contenedores*/
+.content {
+  background-color: var(--color-canvas-inset);
+  border: 1px solid var(--color-border-primary);
+  border-radius: 20px;
   display: flex;
   align-items: center;
-  background-color: var(--color-bg-tertiary);
-  border: 1px solid var(--color-border-primary);
-  border-radius: 25px;
-  width: 50%;
+  flex-direction: column;
+  overflow-y:auto;
+  scrollbar-width: none;
+  padding-top: 10px;
+}
+
+.mensajesJugador{
+  background-color: var(--color-canvas-overlay);
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 10px;
+  margin: 2px;
+  width: 95%;
+  height: auto;
+}
+
+/*Mostrar Info*/
+.content-section{
+  width:20%;
+  height: auto;
+}
+.contentInfo{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 40vh;
+}
+
+/* Ventana Modal  por class*/
+.ventana-modal {
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+
+  height: 100%;
+  width: 100%;
+
+  z-index: 1;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+}
+
+.modal-contenido {
+  display: flex;
+  align-items: center;
+
   height: 50%;
+  width: 50%;
+
+  background-color: var(--color-border-secondary);
+  border-radius: 20px;
+
   position: relative;
   top: 25%;
   left: 25%;
 }
 
-.modal-contenido img{
-  width: auto;
+.modal-img {
+  width: 40%;
   height: 100%;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
 
-  object-fit: cover; /*Ver mas iformacion*/
-  filter: contrast(120%);/*Ver mas iformacion*/
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
-.mensaje{
+.modal-text {
   width: 50%;
   height: 100%;
   padding: 20px 10px;
   text-align: center;
-  flex: 1; /* Esta propiedad permite que el contenido ocupe todo el espacio disponible */
+
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

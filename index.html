@@ -5,43 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Conexión a CSS -->
-    <link rel="stylesheet" href="./assets/style/style.css" /> 
+    <link rel="stylesheet" href="./assets/style/style.css" />
 
     <!-- Conexión con JS -->
     <script type="module" src="./assets/javascript/script.js" defer></script>
     <title>Wordle PPY</title>
   </head>
+
   <body>
 
     <div class="ventana-modal" id="ventana-modal">
       <div class="modal-contenido">
-         <img src="./assets/img/modal.jpeg" alt="Imagen de un Conejo fumando">
-         <div class="mensaje">
-          <h2>  Proyecto Wordle con APIs </h2>
-          <p>
-            Bienvenido a Wordle PPY! Este es un juego divertido donde tienes que adivinar una palabra secreta. Cada intento te mostrará qué letras has acertado y cuáles están en la palabra, pero en diferentes posiciones. ¡Demuestra tu habilidad con las palabras y diviértete jugando
-          </p>
-          
-          <button id="cerrar-modal" >Comienza el Juego</button>
-          
-         </div>
+        <img class="modal-img" id="modal-img" />
+
+        <div class="modal-text">
+          <h2>Proyecto Wordle con APIs</h2>
+          <p class="modal-text-p" id="modal-text-p"></p>
+          <button id="cerrar-modal" class="primaryButton"></button>
+        </div>
       </div>
     </div>
-    
+
     <header>
-      <h2>¿Sabías que...? <samp class="sabias-que" id="sabias-que"></samp></h2>
+      <nav class="nav-header">
+        <ul class="ul-header">
+          <li><button class="menu-btn" id="btn-creador">Creador</button></li>
+          <li><button class="menu-btn" id="btn-desafio">Desafío</button></li>
+          <li><button class="menu-btn" id="btn-contacto">Contacto</button></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <h1>Wordle PPY</h1>
-      <input type="text" id="guess-input"/>
-      <button id="guess-button" >Intentar</button>
-      
-      <div id="grid"></div>
-      
-      <p id="guesses"></p>
+      <section class="content mainWordleNormal">
+        <h1>Wordle PPY</h1>
+        <input type="text" id="guess-input" class="guess-input" />
+        <button id="guess-button" class="primaryButton">Intentar</button>
+        <div id="grid"></div>
+        <p id="guesses"></p>
+        <button
+          id="guess-button-Reinicio"
+          class="primaryButton guess-button-Reinicio"
+        >
+          Jugar de Nuevo
+        </button>
+      </section>
 
-      <button id="guess-button-Reinicio" class="guess-button-reinicio">Jugar de Nuevo</button>
+      <section class="content-section">
+        <article class="content contentInfo" id="contentInfo"></article>
+        <article class="content contentInfo" id="contentDatosRandon">
+          <h2 class="success">¿Sabías que...? <br> <samp id="sabias-que"></samp></h2>
+        </article>
+      </section>
+
 
     </main>
   </body>
